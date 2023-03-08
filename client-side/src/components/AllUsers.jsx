@@ -12,28 +12,33 @@ const Body=styled(Table)`
 width:80%;
 margin:5% auto;
 border-collapse: separate;
-border-spacing: 2px 10px;
+border-spacing: 2px 5px;
 `
 
 const Cell=styled(TableCell)`
 & > button{
-    font-size:2rem;
+    font-size:1.1rem;
     // margin-right:20px;
 }
-font-size:2.5rem;
-margin:3rem`
+font-size:1.4rem;
+margin:1    rem`
 
 // const Url=styled(Link)`
 // font-size:2rem;
 // `
 const Thead=styled(TableHead)`
+& >tr >th{font-weight:bold}
 width:100%;
-height:7rem;
+height:2rem;
 `
 
 const Tbody=styled(TableBody)`
 & >tr {
     background-color:#e0e0e0;
+    padding:1px;
+}
+& >tr >td{
+    padding:10px;
 }`
 
 export default function AllUsers(){
@@ -76,7 +81,7 @@ const deleteUserOne=async(id)=>{
                         <Cell>{user.email}</Cell>
                         <Cell>{user.phone}</Cell>
                         <Cell style={{width:"15%"}}>
-                            <Button variant="contained" style={{marginRight:"40px",fontSize:"2rem"}}
+                            <Button variant="contained" style={{marginRight:"40px",fontSize:"1.2rem"}}
                             component={Link} to={`/edit/${user._id}`}>Edit</Button>
                         <Button 
                       variant="contained"

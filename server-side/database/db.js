@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+// import {username,password} from .env;
 
 const Connection=async (username,password)=>{
     const URL=`mongodb+srv://${username}:${password}@cluster0.3bjm0hh.mongodb.net/?retryWrites=true&w=majority`;

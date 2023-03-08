@@ -7,7 +7,7 @@ const Header=styled(AppBar)
 
 // const Tabs=styled('p')`
 const Tabs=styled(NavLink)`
-font-size:2.7rem;
+font-size:2rem;
 font-weigth:900;
 color:inherit;
 text-decoration:none;

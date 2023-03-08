@@ -14,22 +14,22 @@ margin:auto;
 `
 // const 
 const Label=styled(InputLabel)`
-font-size:2.4rem;`
+font-size:1.4rem;`
 
 const Field=styled(FormControl)`
-margin-top:4rem;
+margin-top:2.2rem;
 height:auto`
 
 const InputSet=styled(Input)`
-font-size:2rem;
-height:4rem`
+font-size:1.4rem;
+height:2rem`
 
 const P=styled('span')`
 `
 
 const Head=styled('h1')`
-font-size:6rem;
-margin-top:3rem;
+font-size:4rem;
+margin-top:2rem;
 font-weight:bold;
 text-align:center
 `
@@ -37,7 +37,7 @@ text-align:center
 const Button1=styled(Button)`
 width:40%;
 margin:auto;
-font-size:2.3rem;
+font-size:1.3rem;
 background-color:#747494;
 font-weight:bold`
 
