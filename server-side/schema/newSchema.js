@@ -11,8 +11,8 @@ const userSchema=mongoose.Schema({
 
 // for key indexing
 autoIncrement.initialize(mongoose.connection);
-userSchema.plugin(autoIncrement.plugin,'user');
+userSchema.plugin(autoIncrement.plugin,'crudUser');
 // model creates a document in user collection
-const User=mongoose.model("user",userSchema);
+const User=mongoose.model("crudUser",userSchema);
   
 export default User;
